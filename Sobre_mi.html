@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="assets/images/tanjiro.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+    <title> Dragon ball super </title>
+</head>
+<style>
+  .container-fluid {
+    max-width: 80%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    overflow-x: hidden;
+  }
+
+  .card {
+    box-shadow: 0px 0px 10px rgba(183, 87, 87, 0.3);
+
+  }
+
+  .card-title {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .card-text {
+    font-size: 18px;
+    text-align: justify;
+  }
+.Intro{
+  font-size: 22px;
+  text-align: justify;
+}
+  .carousel-inner .carousel-item img {
+  height: 450px !important;
+  width: 100%;
+  object-fit: fill;
+  object-position: center;
+}
+
+
+  img {
+  height: 200px;
+  object-fit: cover;
+
+
+}
+  iframe {
+  width: 100%;
+  height: 30vh;
+  border-radius: 25px;
+  margin: 5px;
+  padding: 5px;
+}
+.social {
+  color: #fff; /* Color del texto */
+}
+
+.social i {
+  color: #ff0000; /* Color de fondo de los iconos */
+}
+
+ .foto {
+  width: 200px;
+  height: 30%;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  animation: heartbeat 1s infinite;
+  margin: 0 auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ background-color: #eef7ec;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.foto::before,
+.foto::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  animation: circle 2s infinite;
+}
+
+.foto::before {
+  width: 270px;
+  height: 270px;
+  margin: 15px;
+}
+
+.foto::after {
+  width: 240px;
+  height: 240px;
+  margin: 30px;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+  .sklill {
+    padding-top: 1px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(22, 2, 2);
+    background-color: rgb(140, 255, 0);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+
+  #footer a{
+    color:white;
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .container-fluid {
+      max-width: 100%;
+      overflow-x: hidden;
+      margin: 2px;
+    }
+
+    .carousel-inner .carousel-item img {
+  height: 200px !important;
+  width: 100%;
+  object-fit: fill;
+  object-position: center;
+}
+
+    h1 {
+      font-size: 25px;
+    }
+
+    .card {
+      margin: 2px;
+      width: 100%;
+
+    }
+
+    .card-body {
+      width: 100%;
+    }
+
+    .card-title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .card-text {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+    iframe {
+    width: 100%;
+    height: 30vh;
+    border-radius: 15px;
+  }
+  img {
+  height: 200px;
+  object-fit: cover;
+}
+#footer a{
+    color:white;
+  }
+
+  .foto {
+  width: 150px;
+  height: 50%;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  animation: heartbeat 1s infinite;
+  margin: 0 auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ background-color: #eef7ec;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.foto::before,
+.foto::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  animation: circle 2s infinite;
+}
+
+.foto::before {
+  width: 270px;
+  height: 270px;
+  margin: 15px;
+}
+
+.foto::after {
+  width: 240px;
+  height: 240px;
+  margin: 30px;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.logo_ad{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.top-personajes_titulo{
+  font-size: 18px;
+}
+  }
+
+</style>
+<body>
+  <!--Main Container-->
+  <div class="container-fluid">
+    <!--Header-->
+    <header>
+       
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Dragon ball super</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="principal.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Sobre_mi.html">Sobre Mi</a>
+                  </li>
+                 
+                </ul>
+              
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!--Fin header-->
+    <!--Main- CARROUSEL-->
+<main id="main">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block rounded" src="https://media1.tenor.com/images/c39b47cec90ec3c7dfda9f53acf04458/tenor.gif?itemid=11643139" alt="Demon 1">
+      </div>
+      <div class="carousel-item ">
+        <img class="d-block rounded" src="https://4.bp.blogspot.com/-k31b-cb_Bso/V58ZYZmcdXI/AAAAAAABUbk/qwirtH1xKQ4JaVJ0ctbvTR1gNaCP_Qj4gCLcB/s1600/dragon_ball.gif" alt="Demon 2">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block rounded" src="https://pa1.narvii.com/6124/b8aa9cc30acb4038f08d3fcd8c41840f99a0f66c_hq.gif" alt="Demon 3">
+      </div>
+      <div class="carousel-item ">
+        <img class="d-block rounded" src="https://www.wallpapertip.com/wmimgs/2-22470_goku-dragon-ball-super-5k-wallpaper-dragon-ball.jpg" alt="Demon 4">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block rounded" src="https://www.gratistodo.com/wp-content/uploads/2018/02/Dragon-Ball-Super-4.gif" alt="Demon 5">
+      </div>
+      <div class="carousel-item ">
+        <img class="d-block rounded" src="https://th.bing.com/th/id/R.368a1aaaf595bb79d200d17a301829e7?rik=FVi2O9gm9i8KEw&riu=http%3a%2f%2fk30.kn3.net%2ftaringa%2fD%2fC%2fE%2f6%2f3%2fD%2fpowerew%2f1D6.gif&ehk=5jwEfwy8ci3VeCvSBueXLUCRo9VooBoSodFXHKZ7OIw%3d&risl=&pid=ImgRaw&r=0" alt="Demon 6">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block rounded" src="https://img.quizur.com/f/img609001861003e5.54593040.jpg?lastEdited=1620050317" alt="Demon 7">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block  rounded" src="https://i.ytimg.com/vi/vusaL_87EOY/maxresdefault.jpg" alt="Demon 8">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block rounded" src="https://th.bing.com/th/id/OIP.CbC6BFGttgMV-qwF0aU_kAHaEQ?pid=ImgDet&w=2000&h=1151&rs=1" alt="Demon 9">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block rounded" src="https://th.bing.com/th/id/R.af2e370c01ccb4104b1ef607142d9be2?rik=g%2flQwxkJnvwq%2bA&riu=http%3a%2f%2fassets1.ignimgs.com%2f2016%2f12%2f21%2fdbsep71gokufightinghit-1482357075660_1280w.jpg&ehk=d%2bY2ZHua502chRKuthC%2bzK6OOLZYACBv3gafA5kN0Us%3d&risl=&pid=ImgRaw&r=0" alt="Demon 10">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block rounded" src="https://th.bing.com/th/id/R.52da27842cc87edb4cfa4aba04b2d797?rik=3x7E2LBiNIwNyw&riu=http%3a%2f%2fpm1.narvii.com%2f6263%2fc290968d83894139cd3c4e28fd011ede26555599_hq.jpg&ehk=cyjKwJuVFEVQ7z1ZewEMiy%2fvKWEYFpB4gbBKhukfceM%3d&risl=&pid=ImgRaw&r=0" alt="Demon 1">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block  rounded" src="https://1.bp.blogspot.com/-SF0E3BKIJ4A/XkB4mv3u6UI/AAAAAAAABmY/Y3Wb65gKUwc9ktrAxGeeG89r-7rElCuVACLcBGAsYHQ/w1200-h630-p-k-no-nu/brolly.jpg" alt="Demon 12">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block rounded" src="https://media.eventhubs.com/images/2018/01/10_hit06.jpg" alt="Demon 13">
+      </div>
+
+
+
+
+        </div>
+      </div>
+</main>
+<br>
+ <!--Fin Main-->
+ <h3 class="top-personajes_titulo text-center">¿👨‍🎓 Quien Soy?</h3>
+
+ <div class="mt-4 text-white rounded pt-5 bg-danger">
+  <img class="foto" src="https://scontent.fhex5-2.fna.fbcdn.net/v/t1.6435-9/120065873_3346428548775525_3253130926725497155_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=smr5iNPbKBwAX-0O2UU&_nc_ht=scontent.fhex5-2.fna&oh=00_AfATzuaSU5kFIFV5E8rk4b9AVXHfhCu3qQ3t0ZBrAGUQjw&oe=6467650C" alt="Foto">
+
+  <!--  <img class="foto" src="https://juancitopena.github.io/Mi_Sitio_Web/img/JUANCITO.png" alt="Foto"><br> -->
+   <p class="Intro text-justify m-3 p-1 ">  Mi Nombre es <strong>Luis Miguel Tamarez perez</strong>, soy Estudiante de la Universidad Dominicana O&M, como Ingeniero en Sistemas y
+     Computación, 
+   <br>
+</div>
+<br>
+<div class="descripcion">
+ 
+ <h3 class="sklill text-center">manejador de paquete de oficce | SQL server|  |Xamarin | C# |XAMl |English | contabilidad| Amigo</h3>
+</div>
+ <br>
+
+<p class="Intro text-justify">
+   Reconozco el valor de las tecnologías, y los aportes a las mejoras productivas, de negocios y educación que brindan.
+   Tengo mas de 10 años de experiencia trabajando con Sistemas de Información (CRM, y ERP), orientados a procesos
+   tecnológicos, administrativos, productivos y de marketing, he trabajado en implementaciones de Software para las mejores
+   tomas de decisiones con Inteligencia de Datos, desde el problema, los requerimientos hasta el testing, lanzamiento, y
+   entrenamiento del personal, y como ingeniero tengo experiencia y pasión por el Desarrollo Web Frontend / Backend con (HTML, CSS,
+   JavaScrip, PHP, Python, C#). En este ultimo año me he dedicado aprender de Analisis de Datos, de Ciencia de Datos, Adquiriendo
+   Habilidades con Herramientas (Excel Avzando, SQL Server, Power BI, Python, R, Crystal Report) aportando un gran valor a mi
+   carrera y futuro profesional. 
+   <br> <br>
+   Como ingeniro en Sistemas y Computacion, tengo Conocimientos avanzados en Administracion de Redes y Cableado Estructurado, y manejo Sistemas Operativos Windows Server, Linux, Sistemas de
+   Telefonía IP (Grandstream, Issabel, Elastix), Ciberseguridad, Firewall, ACL, Proxy, P.SI., Routing y Switching, entre otras disciplinas. 
+ </p> 
+
+<br>
+<hr>
+<br>
+
+</div>
+
+
+<br>
+<hr>
+<br>
+<!--Galeria de Videos-->
+<br>
+<h3 class="top-personajes_titulo text-center">🎬Tengo un Canal de Youtube donde Publico Contenidos de Tecnologías</h3>
+<br>
+<div class="card-group">
+  <div class="card">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DhxNFmjGD9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  <div class="card-body">
+      <h5 class="card-title">INTRODUCCION A SQL SERVER -FUNDAMENTOS DE BASE DE DATOS Y EJEMPLO BASICO CRUD</h5>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ETa8VwZsEao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="card-body">
+      <h5 class="card-title">SOLUCION CASO COOPETATIVA SQL</h5>
+       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yMv8ks9rvRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <div class="card-body">
+      <h5 class="card-title">EJERCICIOS Y CONSULTAS SQL BASICO-AVANZADAS</h5>
+         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+</div>
+
+   <div class="card-group">
+  <div class="card">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MTe4y3F40tI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+    <div class="card-body">
+      <h5 class="card-title">REPORTE PARAMETRIZADO STORED PROCEDURE Y CRYSTAL REPORT</h5>
+       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/v3u_K8qt69A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="card-body">
+    <h5 class="card-title">IMPORTAR DATOS DESDE EXCEL A SQL Y VICEVERSA</h5>
+       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TQQNn9bLXJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+      <div class="card-body">
+      <h5 class="card-title">PROGRAMA QUE PIDA # DEL 1 AL 5 C++</h5>
+       <p class="card-text"><small class="text-muted">Last updated 1 year ago</small></p>
+    </div>
+  </div>
+
+
+
+</div>
+
+<!--Fin Galeria de Videos-->
+  
+  <!-- Boton Ver Serie-->
+
+    <div class="text-center center-block">
+
+        <a href="https://www.linkedin.com/in/luis-miguel-tamarez-perez-30a84a205" 
+        target="_blank" class="btn btn-primary btn-lg btn-block" 
+        tabindex="-1" role="button" aria-disabled="true">😁Ver Mi Perfil en Linkedin</a>
+
+  </div>
+
+    <!--Fin Boton Ver Serie-->
+    <hr/>
+
+<!--Redes Sociales-->
+
+<h3 class="text-center">Mis Redes Sociales</h3>
+<hr />
+<div class="text-center center-block">
+<div class="social">
+  <a href="https://www.linkedin.com/in/luis-miguel-tamarez-perez-30a84a205" target="_blank"><i class="fa fa-linkedin-square fa-3x social"></i></a>
+  <a href="https://www.youtube.com/@luismigueltamarezperez1570" target="_blank"><i class="fa fa-youtube-square fa-3x social"></i></a>
+  <a href="https://www.facebook.com/luimyeljefe" target="_blank"><i class="fa fa-facebook-square fa-3x social"></i></a>
+  <a href="https://twitter.com/luimyelluimy?s=11&t=ybgGRLz07chZSo43ZtVCSw&fbclid=IwAR1qNzhcrI15seh_2A0b28YPFXgtvRzyCzAOZ7jF0u2cHu1JqnT5rAjIPAk" target="_blank"><i class="fa fa-twitter-square fa-3x social"></i></a>
+  <a href="https://github.com/luiscompilator" target="_blank"><i class="fa fa-github-square fa-3x social"></i></a>
+</div>
+
+</div>
+<hr />
+         
+<!--Fin Redes Sociales-->
+<h4 class="text-center">Ing. Luis Miguel Tamarez perez <small>&copy; 2023. Todos los derechos reservados.</small></h4>
+    <!--Footer-->
+    <footer id="footer" class="pb-4 pt-4 bg-danger ">
+        <div class="container">
+            <div class="row text-center">
+                <div class=" col-12 col-lg ">
+                    <a class="text-white" href="index.html">Home</a>
+                </div>
+                <div class="col-12 col-lg">
+                    <a href="sobremi.html">Sobre Mi</a>
+                </div>
+               
+                <div class="col-12 col-lg">
+                    <a href="#">Contactos</a>
+                </div>
+               
+            </div>
+        </div>
+    </footer>
+    <!--Fin footer-->
+
+  </div>
+    <!--Main Container-->
+
+
+    <!-- Optional JavaScript -->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js " integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc " crossorigin="anonymous "></script>
+  
+
+</body>
+
+</html>
